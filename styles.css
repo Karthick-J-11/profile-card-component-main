@@ -1,0 +1,143 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-size: auto, auto;
+  background-repeat: no-repeat;
+  background-position: -700px -610px, 150px 250px;
+  background-attachment: fixed;
+}
+
+p {
+  color: hsl(0, 0%, 59%);
+}
+
+main {
+  width: 375px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 304px;
+  height: 340px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+
+}
+
+.half {
+  width: 100%;
+  height: 125px;
+  background-image: url("images/bg-pattern-card.svg");
+  background-size: cover;
+  background-position: bottom center;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 60px;
+}
+
+.img-container img {
+  width: 96px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  position: absolute;
+  top: 80px;
+  left: 100px;
+}
+
+.card-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 25px 35px 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.name {
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.name h1 {
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+}
+
+.name p {
+  font-size: 15px;
+  color: hsl(227, 10%, 46%);
+}
+
+
+.card-text p {
+  grid-row: 2;
+  align-self: center;
+  text-align: center;
+  font-size: 13px;
+
+}
+
+hr {
+  grid-row: 3;
+  border: 1px solid #cdd1d0;
+}
+
+.numbers {
+  grid-row: 4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.numbers h3 {
+  font-size: 18px;
+  padding-bottom: 3px;
+  text-align: center;
+  color: hsl(229, 23%, 23%);
+}
+
+.numbers p {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 600px) {
+  body {
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-size: auto, auto;
+  background-repeat: no-repeat;
+  background-position: -320px -470px, 620px 300px;
+  background-attachment: fixed;
+}
+  main {
+    width: 1440px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
